@@ -1,0 +1,28 @@
+.four_grid_layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    min-width: 300px;
+}
+
+.double_grid_layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 1em 2em;
+    column-gap: 2em;
+}
+
+@media(min-width:481px) and (max-width:768px) {
+    .four_grid_layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    .four_grid_layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .double_grid_layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
