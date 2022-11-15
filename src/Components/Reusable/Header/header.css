@@ -1,0 +1,201 @@
+.header {
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    z-index: 3;
+}
+
+.header>article,
+.navbar {
+    display: flex;
+}
+
+.header>article>h2 {
+    background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+    background-clip: text;
+    color: transparent;
+}
+
+.header>article>img {
+    height: 36px;
+    width: 41px;
+}
+
+.navbar {
+    align-items: center;
+    list-style: none;
+    height: 48px;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.navbar>button {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    width: 20%;
+    position: relative;
+    left: 8%;
+    right: 8%;
+}
+
+.navbar>li>a {
+    padding: 0 2em;
+    text-decoration: none;
+    color: #434343;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.mobile_responsive,
+.navbar2,
+.tablet_responsive,
+.navbar3 {
+    display: none;
+}
+
+@media(min-width: 200px) and (max-width: 480px) {
+    .mobile_responsive {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mobile_responsive>button {
+        outline: none;
+        border: none;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        font-size: 20px;
+        width: 50px;
+        color: white;
+    }
+    .mobile_responsive>article {
+        display: flex;
+    }
+    .mobile_responsive>article>h2 {
+        background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+        background-clip: text;
+        color: transparent;
+    }
+    .header>article,
+    .navbar {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    .navbar2>li {
+        list-style: none;
+    }
+    .navbar2>li>a {
+        text-decoration: none;
+        color: white;
+    }
+    .navbar2>button {
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        height: 38px;
+        border: none;
+        outline: none;
+        color: white;
+        width: 50%;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .navbar2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        gap: 2em;
+        margin-top: 1em;
+        padding: 1em 0;
+        animation-name: scale_up;
+        animation-duration: .5s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: 1;
+        z-index: 3!important;
+        position: relative;
+    }
+}
+
+@keyframes scale_up {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media(min-width:481px) and (max-width:900px) {
+    .tablet_responsive {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .tablet_responsive>button:nth-of-type(1) {
+        outline: none;
+        border: none;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        font-size: 20px;
+        width: 50px;
+        color: white;
+    }
+    .tablet_responsive>button:last-child {
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        height: 38px;
+        border: none;
+        outline: none;
+        color: white;
+        width: 30%;
+        cursor: pointer;
+    }
+    .tablet_responsive>article {
+        display: flex;
+    }
+    .tablet_responsive>article>h2 {
+        background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+        background-clip: text;
+        color: transparent;
+    }
+    .header>article,
+    .navbar,
+    .navbar2 {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    .navbar3>li {
+        list-style: none;
+    }
+    .navbar3>li>a {
+        text-decoration: none;
+        color: white;
+    }
+    .navbar3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        margin-top: 1em;
+        padding: 1em 0;
+        animation-name: scale_up;
+        animation-duration: .5s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: 1;
+        z-index: 3!important;
+        position: relative;
+    }
+}
