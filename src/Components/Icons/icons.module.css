@@ -1,0 +1,28 @@
+.flex_container {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    .flex_container {
+        flex-direction: column;
+        height: max-content;
+        gap: 3em;
+        padding: 1em 0;
+    }
+}
+
+@media(min-width:481px) and (max-width:768px) {
+    .flex_container {
+        flex-wrap: wrap;
+        height: max-content;
+        row-gap: 2em;
+        padding: 2em 0;
+    }
+}
