@@ -29,7 +29,6 @@
     align-items: center;
     list-style: none;
     height: 48px;
-    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -42,8 +41,7 @@
     color: white;
     width: 20%;
     position: relative;
-    left: 8%;
-    right: 8%;
+    margin-left: 5%;
 }
 
 .navbar>li>a {
@@ -51,7 +49,6 @@
     text-decoration: none;
     color: #434343;
     font-weight: 400;
-    font-size: 20px;
 }
 
 .mobile_responsive,

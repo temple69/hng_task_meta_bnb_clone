@@ -51,7 +51,7 @@ const Header = () => {
         <nav>
             <ul className='navbar'>
             <li><Link to="home">Home</Link></li>
-                <li><Link to="place_to_stay">Place_To_Stay</Link></li>
+                <li><Link to="place_to_stay">Place To Stay</Link></li>
                 <li><a href="#">Nft</a></li>
                 <li><a href="#">Community</a></li>
                 <button onClick={ModalShowHandler}>Connect Wallet</button>
@@ -59,7 +59,7 @@ const Header = () => {
             {toggle&&(
             <ul className={toggle?"navbar2":""}>
                 <li><Link to="home">Home</Link></li>
-                <li><Link to="place_to_stay">Place_To_Stay</Link></li>
+                <li><Link to="place_to_stay">Place ToStay</Link></li>
                 <li><a href="#">Nft</a></li>
                 <li><a href="#">Community</a></li>
                 <button onClick={ModalShowHandler}>Connect Wallet</button>
@@ -68,7 +68,7 @@ const Header = () => {
             {toggle&&(
             <ul className={toggle?"navbar3":""}>
                 <li><Link to="home">Home</Link></li>
-                <li><Link to="place_to_stay">Place_To_Stay</Link></li>
+                <li><Link to="place_to_stay">Place To Stay</Link></li>
                 <li><a href="#">Nft</a></li>
                 <li><a href="#">Community</a></li>
             </ul>
